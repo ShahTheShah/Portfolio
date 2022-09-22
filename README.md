@@ -1,3 +1,3 @@
 # Portfolio
-## My portfolio link: https://shahtheshah.github.io/Portfolio/dist
-## MINIMAL link: https://shahtheshah.github.io/Portfolio/Layouts/MINIMAL/dist
+## My portfolio link: https://goo.su/FgksADf
+## MINIMAL link: https://goo.su/d2Mr
