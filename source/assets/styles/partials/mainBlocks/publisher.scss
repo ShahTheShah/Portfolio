@@ -1,0 +1,39 @@
+.publisher {
+    padding-bottom: 3rem;
+    &-form {
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: $bg-publisher;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
+        border-radius: 1rem;
+        &_textarea {
+            resize: none;
+            width: 85%; height: 100%;
+            color: $text;
+            font-size: 2rem;
+            height: 2.6rem;
+        }
+        &-actions {
+            display: flex;
+            justify-content: space-evenly;
+            width: 15%;
+        }
+        &_input {
+            display: none;
+            &__label {
+                width: 6rem; height: 6rem;
+                border-radius: 50%;
+                background: $bg-file-add url('@images/icons/photo.svg') center  no-repeat;
+            }
+        }
+        &_submit {
+            width: 6rem; height: 6rem;
+            border-radius: 50%;
+            text-align: center;
+            background: $primary url('@images/icons/send.svg') center  no-repeat;
+        }
+    }
+}

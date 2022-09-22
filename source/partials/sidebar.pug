@@ -1,0 +1,29 @@
+aside.sidebar
+    .sidebar-container
+        .sidebar_bg__wrapper 
+            img.sidebar_bg(src="@images/sidebar-bg.png", alt="Главная страница")
+        section.userInfo 
+            .userInfo_avatar__wrapper 
+                img.userInfo_avatar(src="@images/avatar.jpg", alt="Ubaidullozoda Shahriori")
+            h2.userInfo_name Убайдуллозода Шахриёри
+            p.userInfo_info блог front-end разработчика
+            ul.userInfo-socialLinks
+                li.userInfo-socialLinks_element
+                    map(name="link-telegram") 
+                        area(shape="default", href="https://t.me/shahriori_ubaidullo", alt="Telegram | Shahriori Ubaidullozoda")
+                    img.userInfo_socialLink(src="@images/icons/telegram.svg", alt="Telegram | Shahriori Ubaidullozoda", usemap="#link-telegram")
+                li.userInfo-socialLinks_element
+                    map(name="link-vkontakte") 
+                        area(shape="default", href="https://vk.com/shahriori_ubaidullo", alt="Vkontakte | Shahriori Ubaidullozoda")
+                    img.userInfo_socialLink(src="@images/icons/vkontakte.svg", alt="VKontakte | Shahriori Ubaidullozoda", usemap="#link-vkontakte")
+                li.userInfo-socialLinks_element
+                    map(name="link-instagram") 
+                        area(shape="default", href="https://instagram.com/shahriori_ubaidullo", alt="Instagram | Shahriori Ubaidullozoda")
+                    img.userInfo_socialLink(src="@images/icons/instagram.svg", alt="Instagram | Shahriori Ubaidullozoda", usemap="#link-instagram")
+            .userInfo_description__wrapper
+                p.userInfo_description 
+                    |Front-end разработчик. Практик верстки сайтов. 
+                    |Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
+            .userInfo-footer 
+                button.userInfo_control.button.red Мои работы
+                button.userInfo_control.button Написать мне

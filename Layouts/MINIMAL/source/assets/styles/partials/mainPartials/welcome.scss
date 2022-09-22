@@ -1,0 +1,17 @@
+.welcome {
+    background: white url('@images/welcome-bg.png') center no-repeat;
+    background-size: cover;
+    &-container {
+        padding: 10.5rem 0 6rem;
+    }
+    &_title {
+        font-family: Montserrat;
+        font-size: 4.4rem;
+        text-transform: uppercase;
+        color: white;
+    }
+    &_subtitle {
+        font-size: 1.5rem;
+        color: rgba(white, 81%);
+    }
+}

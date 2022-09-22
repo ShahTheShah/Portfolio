@@ -1,0 +1,20 @@
+@use 'sass:map';
+@import 'vendors/_variables';
+@import 'settings/_mixins';
+@import 'settings/_reset';
+@import 'vendors/fonts';
+@import 'settings/setup';
+// Start making up!
+// -----------------------------
+
+@import 'partials/header';
+@import 'partials/sidebar';
+@import 'partials/main';
+@import 'partials/mainBlocks/stories';
+@import 'partials/mainBlocks/publisher';
+@import 'partials/mainBlocks/articles';
+@import 'partials/footer';
+
+// -----------------------------
+
+@import 'vendors/adaptive';

@@ -1,0 +1,10 @@
+body {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $text;
+    background-color: $bg;
+}
+
+@import '../vendors/frequentClasses';

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная проекта</title>
+    <link rel="stylesheet" href="./assets/styles/index.min.css?_version=20220920181534">
+  </head>
+  <body> 
+    <header class="header"> 
+      <div class="header-container">
+        <nav class="header-nav"> 
+          <ul class="header-nav-list"> 
+            <li class="header-nav-list_element"><a class="header-nav_link link" href="index.html">Главная</a></li>
+            <li class="header-nav-list_element has-subnav"><a class="header-nav_link has-subnav_title link" href="#">Статьи</a>
+              <ul class="header-nav-sublist"> 
+                <li class="header-nav-sublist_element"><a class="header-nav_link link" href="#">Создание сайтов </a></li>
+                <li class="header-nav-sublist_element"><a class="header-nav_link link" href="#">Интернет маркетинг</a></li>
+                <li class="header-nav-sublist_element"><a class="header-nav_link link" href="#">Продвижение видео</a></li>
+              </ul>
+            </li>
+            <li class="header-nav-list_element"><a class="header-nav_link link" href="#">Обо мне</a></li>
+            <li class="header-nav-list_element"><a class="header-nav_link link" href="#">Реклама</a></li>
+            <li class="header-nav-list-profile">
+              <ul> 
+                <li class="header-nav-list_element profile"><a class="header-nav_link link" href="#">Профиль</a></li>
+                <li class="header-nav-list_element profile"><a class="header-nav_link link" href="#">Выйти</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <form class="header-search" action="#">
+          <input class="header-search_input" type="search" name="search" placeholder="Поиск по сайту">
+        </form>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar_bg__wrapper"> <img class="sidebar_bg" src="./assets/images/sidebar-bg.png" alt="Главная страница"></div>
+        <section class="userInfo"> 
+          <div class="userInfo_avatar__wrapper"> <img class="userInfo_avatar" src="./assets/images/avatar.jpg" alt="Ubaidullozoda Shahriori"></div>
+          <h2 class="userInfo_name">Убайдуллозода Шахриёри</h2>
+          <p class="userInfo_info">блог front-end разработчика</p>
+          <ul class="userInfo-socialLinks">
+            <li class="userInfo-socialLinks_element"><map name="link-telegram"> 
+                <area shape="default" href="https://t.me/shahriori_ubaidullo" alt="Telegram | Shahriori Ubaidullozoda"></map><img class="userInfo_socialLink" src="./assets/images/icons/telegram.svg" alt="Telegram | Shahriori Ubaidullozoda" usemap="#link-telegram"></li>
+            <li class="userInfo-socialLinks_element"><map name="link-vkontakte"> 
+                <area shape="default" href="https://vk.com/shahriori_ubaidullo" alt="Vkontakte | Shahriori Ubaidullozoda"></map><img class="userInfo_socialLink" src="./assets/images/icons/vkontakte.svg" alt="VKontakte | Shahriori Ubaidullozoda" usemap="#link-vkontakte"></li>
+            <li class="userInfo-socialLinks_element"><map name="link-instagram"> 
+                <area shape="default" href="https://instagram.com/shahriori_ubaidullo" alt="Instagram | Shahriori Ubaidullozoda"></map><img class="userInfo_socialLink" src="./assets/images/icons/instagram.svg" alt="Instagram | Shahriori Ubaidullozoda" usemap="#link-instagram"></li>
+          </ul>
+          <div class="userInfo_description__wrapper">
+            <p class="userInfo_description">
+               Front-end разработчик. Практик верстки сайтов. 
+              Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
+            </p>
+          </div>
+          <div class="userInfo-footer"> 
+            <button class="userInfo_control button red">Мои работы</button>
+            <button class="userInfo_control button">Написать мне</button>
+          </div>
+        </section>
+      </div>
+    </aside>
+    <main class="main"> 
+      <div class="main-container">
+        <section class="stories">
+          <div class="stories-container"> 
+            <ul class="stories-list">
+              <li class="stories-list_element">
+                <div class="stories-history">
+                  <div class="stories-history_screen"></div><img class="stories-history_image" src="./assets/images/stories/1.png" alt="Отдыхаю на природе">
+                  <h4 class="stories-history_title">Отдыхаю на природе</h4>
+                  <time class="stories-history_date" datetime="21.09.2020">21.09.2020</time>
+                </div>
+              </li>
+              <li class="stories-list_element">
+                <div class="stories-history">
+                  <div class="stories-history_screen"></div><img class="stories-history_image" src="./assets/images/stories/2.png" alt="Заканчиваю сложный проект">
+                  <h4 class="stories-history_title">Заканчиваю сложный проект</h4>
+                  <time class="stories-history_date" datetime="15.09.2020">15.09.2020</time>
+                </div>
+              </li>
+              <li class="stories-list_element">
+                <div class="stories-history">
+                  <div class="stories-history_screen"></div><img class="stories-history_image" src="./assets/images/stories/3.png" alt="Переехал в новую квартиру">
+                  <h4 class="stories-history_title">Переехал в новую квартиру</h4>
+                  <time class="stories-history_date" datetime="11.09.2020">11.09.2020</time>
+                </div>
+              </li>
+              <li class="stories-list_element">
+                <div class="stories-history">
+                  <div class="stories-history_screen"></div><img class="stories-history_image" src="./assets/images/stories/4.png" alt="Осень пришла!">
+                  <h4 class="stories-history_title">Осень пришла!</h4>
+                  <time class="stories-history_date" datetime="11.09.2020">11.09.2020</time>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="publisher"> 
+          <form class="publisher-form" action="/">
+            <textarea class="publisher-form_textarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+            <div class="publisher-form-actions"> 
+              <label class="publisher-form_input__label button" for="add-file">
+                <input class="publisher-form_input" id="add-file" type="file">
+              </label>
+              <button class="publisher-form_submit button" type="submit"></button>
+            </div>
+          </form>
+        </section>
+        <section class="articles"> 
+          <div class="articles-container"> 
+            <div class="article"> 
+              <div class="article-main">
+                <div class="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+                <div class="article-footer">
+                  <time class="article_date" datetime="21.06.2020">21.06.2020</time>
+                </div>
+              </div>
+            </div>
+            <div class="article"> 
+              <div class="article_bg__wrapper"> <img class="article_bg" src="./assets/images/article.png" alt="Как писать код и быстро и без болезненно?"></div>
+              <div class="article-main"> 
+                <h3 class="article_title">Как писать код быстро и безболезненно?</h3>
+                <div class="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+                <div class="article-footer">
+                  <time class="article_date" datetime="21.06.2020">21.06.2020</time>
+                  <ul class="article-tags">
+                    <li class="article_tag red" title="Создание сайтов">Создание сайтов</li>
+                    <li class="article_tag green" title="Флексим">Флексим</li>
+                    <li class="article_tag indigo" title="Индиго цвет">Индиго цвет</li>
+                  </ul><a class="link article_link" href="article.html">Читать</a>
+                </div>
+              </div>
+            </div>
+            <div class="article"> 
+              <div class="article_video__wrapper"> 
+                <iframe class="article_video" src="https://www.youtube.com/embed/62gmXnRJlP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="article-main"> 
+                <h3 class="article_title">Как писать код быстро и безболезненно?</h3>
+                <div class="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+                <div class="article-footer">
+                  <time class="article_date" datetime="21.06.2020">21.06.2020</time>
+                  <ul class="article-tags">
+                    <li class="article_tag red" title="Создание сайтов">Создание сайтов</li>
+                    <li class="article_tag green" title="Флексим">Флексим</li>
+                    <li class="article_tag indigo" title="Индиго цвет">Индиго цвет</li>
+                  </ul><a class="link article_link" href="article.html">Читать</a>
+                </div>
+              </div>
+            </div>
+            <div class="article"> 
+              <div class="article_bg__wrapper"> <img class="article_bg" src="./assets/images/article2.png" alt="Как я сходил на FrontEnd Conf 2021"></div>
+              <div class="article-main"> 
+                <h3 class="article_title">Как я сходил на FrontEnd Conf 2021</h3>
+                <div class="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+                <div class="article-footer">
+                  <time class="article_date" datetime="21.06.2020">21.06.2020</time>
+                  <ul class="article-tags">
+                    <li class="article_tag blue" title="Создание сайтов">Создание сайтов</li>
+                    <li class="article_tag purple" title="Фиолетовый">Фиолетовый</li>
+                    <li class="article_tag pink" title="Розовый">Розовый</li>
+                    <li class="article_tag orange" title="Оранжевый">Оранжевый</li>
+                  </ul><a class="link article_link" href="article.html">Читать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container"> 
+        <ul class="footer-navigateList"> 
+          <li class="footer-navigateList_element"><a class="link footer_link disable" href="#"><</a></li>
+          <li class="footer-navigateList_element"><a class="link footer_link active" href="#">1    </a></li>
+          <li class="footer-navigateList_element"><a class="link footer_link" href="#">2</a></li>
+          <li class="footer-navigateList_element"><a class="link footer_link" href="#">3</a></li>
+          <li class="footer-navigateList_element"><a class="link footer_link" href="#">></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./assets/scripts/index.min.js?_version=20220920181534"></script>
+  </body>
+</html>

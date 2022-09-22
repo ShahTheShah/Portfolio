@@ -1,0 +1,50 @@
+.advantages {
+    background-color: $advantages-bg;
+    &-container {
+        position: relative;
+        padding: 6rem 0;
+    }
+    &_cross {
+        position: absolute;
+        top: -2.6rem; left: calc(50% - 2.6rem);
+        display: block;
+        width: 5.2rem; height: 5.2rem;
+        &::after,
+        &::before {
+            content: '';
+            position: absolute; right: 0;
+            width: 7rem; height: 0.2rem;
+            background-color: map.get($colors, gray900);
+            transform-origin: 100%;
+        }
+        &::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+        &::before {
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+    }
+    &_text {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    &_anchor {
+        margin-top: 4rem;
+        display: inline-block;
+        padding: 1.3rem 3.4rem 2rem;
+        border: 1px solid $color;
+        border-bottom-width: 2px;
+        background-color: transparent;
+        font-size: 1.6rem;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        &:active {
+            margin-top: 4.78rem;
+            padding-bottom: 1.3rem;
+            border-bottom-width: 1px;
+        }
+    }
+}

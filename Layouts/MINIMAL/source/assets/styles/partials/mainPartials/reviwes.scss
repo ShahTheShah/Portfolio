@@ -1,0 +1,37 @@
+.reviews {
+    background-color: map.get($colors, gray);
+    &-container {
+        padding: 8rem 0 7rem;
+    }
+    &-list {
+        position: relative;
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9rem;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 12.5rem; left: calc(50% - 12.5rem);
+            width: 25rem; height: .2rem;
+            background-color: map.get($colors, gray400);
+            transform: rotate(90deg);
+            border-radius: .2rem;
+        }
+    }
+    .review {
+        &_userReview {
+            font-size: 3.5rem;
+        }
+        &_userImage {
+            &__wrapper {
+                margin-top: 3rem;
+            }
+            border-radius: .5rem;
+        }
+        &_userName {
+            font-size: 1.8rem;
+            color: map.get($colors, gray400);
+        }
+    }
+}

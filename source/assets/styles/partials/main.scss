@@ -1,0 +1,9 @@
+.main {
+    padding: 12rem 0 8rem $sidebar-width;
+    height: 100%;
+    background-color: $bg;
+    &-container {
+        height: 100%;
+        padding: 0  25rem 0;
+    }
+}

@@ -1,0 +1,40 @@
+-
+    var team = [
+        {
+            name: 'Ron Swanson',
+            work: 'Founder',
+            socials: ['twitter', 'in', 'email']
+        },
+        {
+            name: 'Julia Depish',
+            work: 'Marketing',
+            socials: ['twitter', 'in', 'email', 'instagram', 'facebook']
+        },
+        {
+            name: 'Danny Devry',
+            work: 'Designer',
+            socials: ['twitter', 'in', 'email']
+        },
+        {
+            name: 'Lisa Smith',
+            work: 'Developer',
+            socials: ['twitter', 'facebook', 'email']
+        }
+    ];
+
+section.team 
+    .team-container.container 
+        h2.team_title.title Our Team
+        span.line 
+        ul.team-list 
+            each person, index in team
+                li.team-list_element.profile 
+                    .profile_photo__wrapper 
+                        img.profile_photo(src=`@images/persons/${index + 1}.png`, alt=`${person.name}`) 
+                    h3.profile_name.title= person.name
+                    p.profile_work= person.work
+                    ul.profile-socials 
+                        each social, index in person.socials
+                            li.profile-socials_element
+                                img(src=`@images/socials/${social}.svg`, alt=`${social} | ${person.name}`, usemap=`#link-${social}`)
+                

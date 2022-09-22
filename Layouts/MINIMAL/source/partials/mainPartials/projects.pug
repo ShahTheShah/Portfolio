@@ -1,0 +1,15 @@
+-
+    var projects = ['Woods', 'Path', 'Darkness','Waves','Drops','Ocean', 'Town','Mountain', 'Camera'];
+
+
+section.projects 
+    .projects-container.container 
+        h2.projects_title.title Recent projects
+        span.line
+        ul.projects-list 
+            each project, index in projects
+                li.projects-list_element.project
+                    .projects_image__wrapper
+                        img.project_image(src=`@images/projects/${index + 1}.png`, alt=`${project}`)
+                    h3.project_title.title= project
+                    p.project_description Website

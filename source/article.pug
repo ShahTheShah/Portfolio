@@ -1,0 +1,15 @@
+-
+    const
+        title    = 'Страница Статьи',
+        nameFile = 'article';
+
+doctype html
+html(lang="ru")
+    include partials/head
+    body 
+        include partials/header
+        main.main 
+            .main-container.container
+                include partials/article
+        include partials/sidebar
+        script(src=`@scripts/${nameFile}.min.js`)

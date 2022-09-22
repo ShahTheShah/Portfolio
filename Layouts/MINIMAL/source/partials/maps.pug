@@ -1,0 +1,14 @@
+-
+    const  mapsLink = [
+        ['home', '#'],
+        ['twitter', 'https://twitter.com/'],
+        ['email', 'https://mail.yandex.ru/'],
+        ['facebook', 'https://facebook.com'],
+        ['instagram', 'https://instagram.com/'],
+        ['in', 'https://in.com/']
+    ];
+
+.maps 
+    each name in mapsLink
+        map(name=`link-${name[0]}`) 
+                area(shape="default", href=`${name[1]}`, alt=`${name[0]}`)

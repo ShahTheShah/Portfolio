@@ -1,0 +1,109 @@
+.footer {
+    background: white url('@images/footer-bg.png') center no-repeat;
+    background-size: cover;
+    &-container {
+        padding: 8rem 0 7rem;
+    }
+
+    .line {
+        margin: 3rem auto 4rem !important;
+        background-color: map.get($colors, gray400);
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .contact {
+        padding: 0 6rem;
+        &_call {
+            margin-top: 2rem;
+            font-size: 2rem;
+        }
+        &_address,
+        &_data {
+            margin-top: 2rem;
+            font-size: 2rem;
+            color: #212121;
+            a {
+                display: block;
+                font-size: 2rem;
+            }
+        }
+        &-socials {
+            &_element {
+                margin: 0 auto;
+                display: flex;
+                justify-content: start;
+                width: 60%;
+                font-size: 2rem;
+                img {
+                    margin-right: 1rem;
+                }
+                a {
+                    font-size: inherit;
+                }
+            }
+        }
+    }
+    &_companyName {
+        padding: 2rem 0;
+        background-color: #000;
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+.form {
+    &__wrapper {
+        background-color: #000000;
+        padding: 8rem 0 4rem;
+    }
+    &-container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 76.8rem;
+        background-color: rgba(white, 18%);
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+    &_input {
+        padding: 2rem;
+        background-color: transparent;
+
+        font-size: 1.8rem;
+        font-style: italic;
+        color: white;
+        &::placeholder {
+            color: white;
+        }
+        &:nth-child(2n + 2) {
+            background-color: rgba(white, 20%);
+        }
+        resize: vertical;
+        
+    }
+    &_submit {
+        margin: 4rem auto;
+        padding: 2rem 3.5rem 2.5rem;
+        display: block;
+        background-color: transparent;
+        border: .1rem solid #8BCAC3 !important;
+        border-bottom-width: .2rem !important;
+        
+        font-style: italic;
+        font-size: 2rem;
+        color: #8BCAC3;
+        cursor: pointer;
+        
+        &:active {
+            margin-top: 4.5rem;
+            padding-bottom: 2rem;
+            border-bottom-width: .1rem !important;
+            outline: none;
+        }
+    }
+}

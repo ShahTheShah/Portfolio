@@ -1,0 +1,40 @@
+footer.footer
+    .footer-container.container
+        h2.footer_title.title Let’s Get in touch
+        span.line
+        ul.footer-list
+            li.footer-list_element.contact 
+                .contact_image__wrapper 
+                    img.contact_image(src="@images/map.svg", alt="Meet us in person")
+                h3.contact_call.title Meet us in person
+                address.contact_address 8776 Juniper Street, Unit #204, Merriweather, Ontorio, Canada
+            li.footer-list_element.contact 
+                .contact_image__wrapper 
+                    img.contact_image(src="@images/email.svg", alt="The traditional way")
+                h3.contact_call.title The traditional way
+                .contact_data Email us
+                    a.link(href="mailto:shahtheshah@ya.ru") shahtheshah@ya.ru
+            li.footer-list_element.contact 
+                .contact_image__wrapper 
+                    img.contact_image(src="@images/heart.svg", alt="Let’s get social")
+                h3.contact_call.title Let’s get social
+                ul.contact-socials 
+                    li.contact-socials_element 
+                        img(src="@images/socials/facebook.svg", alt="Facebook", usemap="#link-facebook")
+                        a.link(href="https://facebook.com/") Facebook
+                    li.contact-socials_element 
+                        img(src="@images/socials/instagram.svg", alt="Instagram", usemap="#link-instagram")
+                        a.link(href="https://instagram.com/") Instagram
+                    li.contact-socials_element 
+                        img(src="@images/socials/twitter.svg", alt="Twitter", usemap="#link-twitter")
+                        a.link(href="https://twitter.com/") Twitter
+    .form__wrapper 
+        form.form(action="/")
+            .form-container
+                input.form_input(type="text", name="name", placeholder='Name', required)
+                input.form_input(type="email", name="email", placeholder='Email', required)
+                input.form_input(type="text", name="budget", placeholder='Budget', required) 
+                textarea.form_input(name="text", placeholder="Describe youre project...", required)
+            button.form_submit(type="submit") Send Message
+    .footer_companyName
+        img(src="@images/logo-min.svg", alt="MINIMAL", usemap="#link-home")

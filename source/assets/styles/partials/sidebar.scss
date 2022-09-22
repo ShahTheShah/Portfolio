@@ -1,0 +1,81 @@
+.sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    background-color: $bg-sidebar;
+    width: $sidebar-width; height: 100vh;
+    box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
+    z-index: $z-index-sidebar;
+
+    &_bg {
+        &__wrapper {
+            width: 100%;
+        }
+        object-fit: cover;
+        width: 100%; height: auto;
+    }
+}
+
+.userInfo {
+    margin-top: -7.2rem;
+    text-align: center; 
+    &_avatar {
+        &__wrapper {
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        width: 14rem; height: 14rem;
+        border-radius: 50%;
+        border: .4rem solid map.get($colors, white);
+    }
+    &_name {
+        padding-bottom: .8rem;
+        font-size: 2rem;
+        font-weight: medium;
+    }
+    &_info {
+        padding-bottom: 2.4rem;
+        font-size: 1.8rem;
+        font-weight: lighter;
+    }
+    &-socialLinks {
+        padding-bottom: 3rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        &_element {
+            position: relative;
+            area:hover > .userInfo_socialLink::after {
+                background-color: darken(rgba(map.get($colors, gray800), .2), 5%);
+            }
+        }
+    }
+    &_socialLink {
+        position: relative;
+        width: 4rem; height: 4rem;
+        object-fit: cover;
+    }
+    &_description {
+        &__wrapper {
+            margin: 0 auto 3rem;
+            padding: 3rem 0;
+            border-top: 2px solid $color-line;
+            border-bottom: 2px solid $color-line;
+            width: 90%;
+        }
+        font-size: 1.9rem;
+        font-weight: normal;
+        line-height: 1.8;
+    }
+    &-footer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    &_control {
+        font-size: 1.8rem;
+    }
+}

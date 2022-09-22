@@ -1,0 +1,37 @@
+.projects {
+    background-color: map.get($colors, gray);
+    &-container {
+        padding: 8rem 0 7rem;
+    }
+
+    .line {
+        margin: 3rem auto 4rem !important;
+        background-color: map.get($colors, gray400);
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .project {
+        padding-bottom: 2rem;
+        background-color: white;
+        border-radius: .5rem;
+        overflow: hidden;
+        &_image {
+            &__wrapper {
+                width: 100%; height: auto;
+            }
+            width: 100%; height: auto;
+            object-fit: contain;
+        }
+        &_title {
+            margin-top: 2rem;
+            font-size: 2rem;
+        }
+        &_description {
+            margin-top: 1rem;
+            font-size: 1.6rem;
+        }
+    }
+}

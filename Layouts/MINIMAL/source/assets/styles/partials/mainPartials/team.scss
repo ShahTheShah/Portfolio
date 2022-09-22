@@ -1,0 +1,51 @@
+.team {
+    &-container {
+        padding: 8rem 0 7rem;
+    }
+
+    .line {
+        margin: 3rem auto 4rem !important;
+        background-color: map.get($colors, gray400);
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .profile {
+        padding-bottom: 2rem;
+        border: 1px solid map.get($colors, gray);
+        border-radius: .5rem;
+        overflow: hidden;
+        &_photo {
+            &__wrapper {
+                width: 100%; height: auto;
+            }
+            width: 100%; height: auto;
+            object-fit: cover;
+        }
+        &_name {
+            margin-top: 1.5rem;
+            font-size: 2rem;
+        }
+        &_work {
+            margin-top: 1rem;
+            font-size: 1.8rem;
+        }
+        &-socials {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &_element {
+                padding: 0.2rem .5rem;
+                margin: 0 .5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: map.get($colors, gray);
+                border-radius: .2rem;
+            }
+        }
+    }
+}
