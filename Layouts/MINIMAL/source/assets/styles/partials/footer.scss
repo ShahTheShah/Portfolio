@@ -12,11 +12,18 @@
     &-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 4rem;
     }
 
     .contact {
         padding: 0 6rem;
+        &_image {
+            &__wrapper {
+                display: flex;
+                justify-content: center;
+            }
+            width: 10rem; height: 10rem;
+        }
         &_call {
             margin-top: 2rem;
             font-size: 2rem;
@@ -35,8 +42,7 @@
             &_element {
                 margin: 0 auto;
                 display: flex;
-                justify-content: start;
-                width: 60%;
+                justify-content: center;
                 font-size: 2rem;
                 img {
                     margin-right: 1rem;
@@ -45,14 +51,6 @@
                     font-size: inherit;
                 }
             }
-        }
-    }
-    &_companyName {
-        padding: 2rem 0;
-        background-color: #000;
-        img {
-            margin: 0 auto;
-            display: block;
         }
     }
 }
@@ -73,7 +71,7 @@
     &_input {
         padding: 2rem;
         background-color: transparent;
-
+        
         font-size: 1.8rem;
         font-style: italic;
         color: white;
@@ -105,5 +103,13 @@
             border-bottom-width: .1rem !important;
             outline: none;
         }
+    }
+}
+.companyName {
+    padding: 2rem 0;
+    background-color: #000;
+    img {
+        margin: 0 auto;
+        display: block;
     }
 }

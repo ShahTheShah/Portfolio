@@ -1,0 +1,90 @@
+body.navOpen {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+        overflow-x: hidden;
+}
+.header {
+    &-navigation {
+        &_button {
+            position: relative;
+            width: 4rem;
+            height: 4rem;
+            border-radius: .3rem;
+            overflow: hidden;
+    
+            &::before,
+            span,
+            &::after {
+                content: '';
+                position: absolute;
+                height: 0.3rem;
+                background-color: $color;
+                border-radius: .2rem;
+                transform: rotate(0deg);
+                transition: all .2s ease-in-out;
+                transition-delay: .1s;
+            }
+            &::before {
+                right: 0;
+                top: 0;
+                width: 50%;
+            }
+
+            span {
+                top: calc(50% - .15rem);
+                left: 0;
+                width: 100%;
+            }
+
+            &::after {
+                top: auto;
+                bottom: 0;
+                left: 0;
+                width: 70%;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                &::before,
+                span,
+                &::after {
+                    width: 100%;
+                }
+            }
+            &.close {
+                span {
+                    width: 0%;
+                }
+    
+                &::before,
+                &::after {
+                    height: 0.4rem;
+                    border-radius: .3rem;
+                    left: -35%;
+                    width: 5rem;
+                    transform-origin: 100%;
+                }
+    
+                &::before {
+                    top: 0;
+                    transform: rotate(-45deg);
+                }
+    
+                &::after {
+                    bottom: 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        &-list {
+            &.open {
+                width: 100vw;
+                opacity: 1;
+                visibility: visible;
+                right: 0;
+            }
+        }
+    }
+}

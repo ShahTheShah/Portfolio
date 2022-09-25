@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная проекта</title>
-    <link rel="stylesheet" href="./assets/styles/index.min.css?_version=20220923001137">
+    <link rel="stylesheet" href="./assets/styles/index.min.css">
   </head>
-  <body> 
+  <body>
     <div class="maps"> <map name="link-home"> 
         <area shape="default" href="#" alt="home"></map><map name="link-twitter"> 
         <area shape="default" href="https://twitter.com/" alt="twitter"></map><map name="link-email"> 
@@ -18,9 +18,10 @@
     </div>
     <header class="header">
       <div class="header-container container">
-        <div class="header_logo__wrapper"> <img src="./assets/images/logo.svg" alt="MINIMAL" usemap="#link-home"></div>
+        <div class="header_logo__wrapper"> <img class="header_logo" src="./assets/images/logo.svg" alt="MINIMAL" usemap="#link-home"></div>
         <nav class="header-navigation">
-          <ul class="header-navigation-list"> 
+          <button class="header-navigation_button" id="navOpen"><span></span></button>
+          <ul class="header-navigation-list" id="navList">
             <li class="header-navigation-list_element"><a class="header-navigation_link link" href="#">Process</a></li>
             <li class="header-navigation-list_element"><a class="header-navigation_link link" href="#">Projects</a></li>
             <li class="header-navigation-list_element"><a class="header-navigation_link link" href="#">Team</a></li>
@@ -207,19 +208,19 @@
           </li>
         </ul>
       </div>
-      <div class="form__wrapper"> 
-        <form class="form" action="/">
-          <div class="form-container">
-            <input class="form_input" type="text" name="name" placeholder="Name" required>
-            <input class="form_input" type="email" name="email" placeholder="Email" required>
-            <input class="form_input" type="text" name="budget" placeholder="Budget" required>
-            <textarea class="form_input" name="text" placeholder="Describe youre project..." required></textarea>
-          </div>
-          <button class="form_submit" type="submit">Send Message</button>
-        </form>
-      </div>
-      <div class="footer_companyName"><img src="./assets/images/logo-min.svg" alt="MINIMAL" usemap="#link-home"></div>
     </footer>
-    <script src="./assets/scripts/index.min.js?_version=20220923001137"></script>
+    <div class="form__wrapper"> 
+      <form class="form" action="/">
+        <div class="form-container">
+          <input class="form_input" type="text" name="name" placeholder="Name" required>
+          <input class="form_input" type="email" name="email" placeholder="Email" required>
+          <input class="form_input" type="text" name="budget" placeholder="Budget" required>
+          <textarea class="form_input" name="text" placeholder="Describe youre project..." required></textarea>
+        </div>
+        <button class="form_submit" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="companyName"><img src="./assets/images/logo-min.svg" alt="MINIMAL" usemap="#link-home"></div>
+    <script src="./assets/scripts/index.min.js"></script>
   </body>
 </html>

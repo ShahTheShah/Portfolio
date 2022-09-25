@@ -1,17 +1,21 @@
 .header {
     background-color: $bg;
+
     &-container {
         padding: 1.8rem 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &-navigation {
         &-list {
             display: flex;
             gap: 2rem;
-            &_element {
-            }
+            transition: all .5s ease;
+        }
+        &_button {
+            display: none;
         }
     }
 }

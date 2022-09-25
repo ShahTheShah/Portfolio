@@ -1,23 +1,156 @@
-@media (min-width: 576px) {
+@include mediaQuery($xs, $sm) {
+    .container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        width: 100%;
+    }
+    .header {
+        &_logo {
+            &__wrapper {
+                height: 5rem; width: auto;
+            }
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+        &-navigation {
+            &_button {
+                display: block;
+                z-index: 101;
+            }
+            &-list {
+                position: absolute;
+                top: 0; right: -100vw;
+                visibility: hidden;
+                opacity: 0;
+                width: 0%;
+                background-color: $bg;
+                height: 100vh;
+                z-index: 100;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            &_link {
+                font-size: 3rem;
+            }
+        }
+    }
+    .potentials {
+        &-content {
+            grid-template-columns: 1fr;
+        }
+    }
+    .projects {
+        &-list {
+            grid-template-columns: 1fr;
+        }
+    }
+    .team {
+        &-list {
+            grid-template-columns: 1fr;
+        }
+    }
+    .reviews {
+        &-list {
+            grid-template-columns: 1fr;
+            &::before {
+                top: 50%;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    .footer {
+        &-container {
+            padding: 8rem 0 7rem;
+        }
+        &-list {
+            grid-template-columns: 1fr;
+        }
+    }
+    .form {
+        &__wrapper {
+            // padding: 0;
+        }
+        &-container {
+            width: 100%;
+        }
+    }
+}
+
+@include mediaQuery($sm, $md) {
     .container {
         max-width: 540px;
     }
+    .potentials {
+        &-content {
+            padding: 0 5rem;
+            grid-template-columns: 1fr;
+        }
+    }
+    .projects {
+        &-list {
+            padding: 0 5rem;
+            grid-template-columns: 1fr;
+        }
+    }
+    .reviews {
+        &-list {
+            grid-template-columns: 1fr;
+            &::before {
+                top: 50%;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    .footer {
+        &-list {
+            grid-template-columns: 1fr;
+        }
+    }
+    .form {
+        &__wrapper {
+            padding: 8rem 2rem 4rem;
+        }
+        &-container {
+            width: 100%;
+        }
+    }
+    .team {
+        &-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
-
-@media (min-width: 768px) {
+@include mediaQuery($md, $lg) {
     .container {
         max-width: 720px;
     }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
+    .projects {
+        &-list {
+            grid-template-columns: 1fr 1fr;
+            
+        }
+    }
+    .footer {
+        &-list {
+            gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
-
-@media (min-width: 1200px) {
+@include mediaQuery($lg, $xl) {
     .container {
-        max-width: 1140px;
+            max-width: 960px;
+        }
+}
+
+@include mediaQuery($xl, $xxl) {
+    .container {
+            max-width: 1140px;
+        }
+}
+@include mediaQuery($xxl, none) {
+    .container {
+        max-width: 1320px;
     }
 }

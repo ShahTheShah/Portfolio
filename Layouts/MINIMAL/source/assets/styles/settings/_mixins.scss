@@ -1,0 +1,11 @@
+@mixin mediaQuery($min, $max) {
+    @if $max == none {
+        @media (min-width: $min) {
+            @content;
+        }
+    } @else {
+        @media (min-width: $min) and (max-width: calc($max - .02px)) {
+            @content;
+        }
+    }
+}

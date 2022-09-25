@@ -9,13 +9,14 @@ import { deleteAsync } from 'del';
 
 // FTP
 import zipPlugin from 'gulp-zip';
-import vinylFTP from 'vinyl-ftp';
-import util     from 'util';
+import vinylFTP  from 'vinyl-ftp';
+import util      from 'util';
 
 // HTML
 import webpHtmlNosvg from 'gulp-webp-html-nosvg';
 import versionNumber from 'gulp-version-number';
 import pug           from 'gulp-pug';
+import htmlMin       from 'gulp-htmlmin';
 
 // Styles
 import dartSass             from 'sass';
@@ -47,5 +48,6 @@ export default {
     sass, autoprefixer,
     cleanCss, webpack, 
     deleteAsync, webpcss,
-    imagemin, zipPlugin
+    imagemin, zipPlugin,
+    htmlMin
 };

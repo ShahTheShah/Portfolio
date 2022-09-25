@@ -25,5 +25,6 @@ export default () => app.gulp.src(app.path.source.html)
             'file': './gulp/version.json'
         }
     })))
+    .pipe(app.plugins.htmlMin({ collapseWhitespace: true }))
     .pipe(app.gulp.dest(app.path.build.html))
     .pipe(app.plugins.browserSync.stream());
