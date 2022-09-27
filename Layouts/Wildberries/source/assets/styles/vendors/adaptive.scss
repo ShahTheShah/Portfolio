@@ -1,0 +1,35 @@
+@include mediaQuery($breakpoint-xs, $breakpoint-sm) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@include mediaQuery($breakpoint-sm, $breakpoint-md) {
+    .container {
+        max-width: 566px;
+    }
+}
+
+@include mediaQuery($breakpoint-md, $breakpoint-lg) {
+    .container {
+        max-width: 758px;
+    }
+}
+
+@include mediaQuery($breakpoint-lg, $breakpoint-xl) {
+    .container {
+        max-width: 982px;
+    }
+}
+
+@include mediaQuery($breakpoint-xl, $breakpoint-xxl) {
+    .container {
+        max-width: 1190px;
+    }
+}
+
+@include mediaQuery($breakpoint-xxl, none) {
+    .container {
+        max-width: 1390px;
+    }
+}

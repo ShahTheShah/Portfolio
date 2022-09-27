@@ -1,0 +1,18 @@
+@use 'sass:map';
+@import 'vendors/_variables';
+@import 'settings/_mixins';
+@import 'settings/_reset';
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import 'vendors/fonts';
+@import 'settings/setup';
+// Start making up!
+// -----------------------------
+
+@import 'partials/header';
+@import 'partials/sidebar';
+@import 'partials/footer';
+
+// -----------------------------
+
+@import 'vendors/adaptive';
