@@ -635,6 +635,18 @@ body.sidebarActive {
   color: #FFFFFF;
 }
 
+main.main {
+  height: 100vh;
+  position: relative;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  z-index: 10;
+}
+
 .footer {
   position: relative;
   padding-top: 4rem;
