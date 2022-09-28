@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница товара</title>
+    <link rel="stylesheet" href="./assets/styles/product.min.css?_version=20220929001750">
+  </head>
+  <body> 
+    <div class="maps"> <map name="link-home"> 
+        <area shape="default" href="index.html" alt="Wildberries"></map></div>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="header-nav"> 
+          <ul class="header-nav-elements"> 
+            <li class="header-nav_element">
+              <button class="header_burger" id="sidebarOpen"><span></span></button>
+              <div class="header_logo__wrapper"> <img class="header_logo" src="./assets/images/logo.svg" alt="Wildberries" usemap="#link-home"></div>
+            </li>
+            <li class="header-nav_element"> 
+              <form class="header-form" action="/">
+                <input class="header-form_input" type="text" placeholder="Я ищу...">
+                <button class="header-form_search"></button>
+                <ul class="header-form-searchList">
+                  <li class="header-form-searchList_element"> <a class="header-form-searchList_link link" href="#">Телефон</a></li>
+                  <li class="header-form-searchList_element"> <a class="header-form-searchList_link link" href="#">Футболка</a></li>
+                  <li class="header-form-searchList_element"> <a class="header-form-searchList_link link" href="#">Панама</a></li>
+                  <li class="header-form-searchList_element"> <a class="header-form-searchList_link link" href="#">Плавки</a></li>
+                  <li class="header-form-searchList_element"> <a class="header-form-searchList_link link" href="#">Чай </a></li>
+                  <li class="header-form-searchList_element"> <a class="header-form-searchList_link link" href="#">Свитер</a></li>
+                </ul>
+              </form>
+            </li>
+            <li class="header-nav_element"> <a class="header_button header_button__address link" href="#">Адреса</a><a class="header_button header_button__profile link" href="#">Войти</a><a class="header_button header_button__cart link" href="product.html">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <sidebar class="sidebar" id="sidebar">
+      <div class="sidebar-container"> 
+        <button class="sidebar_close" id="sidebarClose"></button>
+        <div class="categories"> 
+          <ul class="categories-list">
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Женщинам">Женщинам</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Обувь">Обувь</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Детям">Детям</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Мужчинам">Мужчинам</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Дом">Дом</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Красота">Красота</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Аксессуары">Аксессуары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Электроника">Электроника</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Игрушки">Игрушки</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Мебель">Мебель</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Товары для взрослых">Товары для взрослых</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Бытовая химия">Бытовая химия</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Зоотовары">Зоотовары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Спорт">Спорт</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Школа">Школа</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Автотовары">Автотовары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Книги">Книги</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Ювелирные изделия">Ювелирные изделия</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Для ремонта">Для ремонта</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Алкоголь">Алкоголь</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Сад и дача">Сад и дача</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Здоровье">Здоровье</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Концтовары">Концтовары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Цифровые товары">Цифровые товары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Акции">Акции</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Авиабилеты">Авиабилеты</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Бренды">Бренды</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Видеообзоры">Видеообзоры</a></li>
+          </ul>
+        </div>
+      </div>
+    </sidebar>
+    <main class="product">
+      <section class="product-header"> 
+        <div class="product-header-container container"> 
+          <div class="product-header-top">
+            <nav class="product-header-nav">
+              <button class="product-header-nav_buttonBack"></button>
+              <ul class="product-header-nav-list"> 
+                <li class="product-header-nav-list_element"><a class="product-header-nav_link link" href="#">Главная</a></li>
+                <li class="product-header-nav-list_element"><a class="product-header-nav_link link" href="#">Электроника</a></li>
+                <li class="product-header-nav-list_element"><a class="product-header-nav_link link" href="#">Смартфоны</a></li>
+                <li class="product-header-nav-list_element"><a class="product-header-nav_link link" href="#">Xiaomi</a></li>
+              </ul>
+            </nav>
+            <button class="product-header_share"><span class="product-header_share__text"></span><span class="product-header_share__icon"></span></button>
+          </div>
+          <div class="product-header-bottom"> 
+            <h1 class="product_name">Xiaomi / Смартфон Redmi 9A: 6.53" 1600x720/IPS MediaTek Helio G25 2GB/32GB 13Мп/5Мп 5000 mAh<span class="product_event">Рассрочка до 0-0-12</span></h1><a class="product-estimation estimation" href="#">
+              <div class="product-estimation-stars estimation-stars star-4"><span> </span><span> </span><span> </span><span> </span><span> </span></div><span class="product-estimation_count">667 отзывов</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="product-main"> 
+        <div class="product-main-container container"> 
+          <div class="product-view glide"> 
+            <div class="glide-controls">
+              <button class="glide-controls--prev glide_control"></button>
+              <button class="glide-controls--next glide_control"></button>
+            </div>
+            <div class="glide-track"> 
+              <div class="glide-track_image__wrapper"><img class="glide-track_image" src="./assets/images/product/1-1.jpg" alt=""></div>
+              <div class="glide-track_image__wrapper"><img class="glide-track_image" src="./assets/images/product/1-3.jpg" alt=""></div>
+              <div class="glide-track_image__wrapper"><img class="glide-track_image" src="./assets/images/product/1-4.jpg" alt=""></div>
+              <div class="glide-track_image__wrapper"><img class="glide-track_image" src="./assets/images/product/1-5.jpg" alt=""></div>
+              <div class="glide-track_image__wrapper"><img class="glide-track_image" src="./assets/images/product/1-6.jpg"></div>
+            </div>
+            <div class="glide-main">
+              <div class="glide-main_image__wrapper"><img class="glide-main_image" src="./assets/images/product/1-2.jpg"></div>
+            </div>
+          </div>
+          <div class="product-aside"> 
+            <div class="product-aside-top">
+              <div class="product_price"> 
+                <div class="product_price--actual">23 000 ₽</div>
+                <div class="product_price--discount">29 000 ₽</div>
+              </div>
+              <button class="product_button--favorite"></button>
+              <button class="product_button--addToCart">Добавить в корзину</button>
+              <div class="product_delivery"> <span class="product_delivery--day">1-3 октября</span> доставит Wildberries со склада продавца</div>
+            </div>
+            <div class="product-aside-bottom"> </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-about">
+        <div class="product-about-container container"> 
+          <h2 class="product-about_title">О товаре</h2>
+          <div class="product-about-content"> 
+            <div class="product-characteristics">
+              <table class="product-characteristics-table"> 
+                <tr> 
+                  <th class="product-characteristics_title">Связь</th>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Беспроводные интерфейсы</span></td>
+                  <td class="product-characteristics_params">Bluetooth; NFC; Wi-Fi; ИК-Порт; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Спутниковая навигация</span></td>
+                  <td class="product-characteristics_params">A-GPS; ГЛОНАСС; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Количество SIM карт</span></td>
+                  <td class="product-characteristics_params">2</td>
+                </tr>
+              </table>
+              <table class="product-characteristics-table"> 
+                <tr> 
+                  <th class="product-characteristics_title">Связь</th>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Беспроводные интерфейсы</span></td>
+                  <td class="product-characteristics_params">Bluetooth; NFC; Wi-Fi; ИК-Порт; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Спутниковая навигация</span></td>
+                  <td class="product-characteristics_params">A-GPS; ГЛОНАСС; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Количество SIM карт</span></td>
+                  <td class="product-characteristics_params">2</td>
+                </tr>
+              </table>
+              <table class="product-characteristics-table"> 
+                <tr> 
+                  <th class="product-characteristics_title">Связь</th>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Беспроводные интерфейсы</span></td>
+                  <td class="product-characteristics_params">Bluetooth; NFC; Wi-Fi; ИК-Порт; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Спутниковая навигация</span></td>
+                  <td class="product-characteristics_params">A-GPS; ГЛОНАСС; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Количество SIM карт</span></td>
+                  <td class="product-characteristics_params">2</td>
+                </tr>
+              </table>
+              <table class="product-characteristics-table"> 
+                <tr> 
+                  <th class="product-characteristics_title">Связь</th>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Беспроводные интерфейсы</span></td>
+                  <td class="product-characteristics_params">Bluetooth; NFC; Wi-Fi; ИК-Порт; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Спутниковая навигация</span></td>
+                  <td class="product-characteristics_params">A-GPS; ГЛОНАСС; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Количество SIM карт</span></td>
+                  <td class="product-characteristics_params">2</td>
+                </tr>
+              </table>
+              <table class="product-characteristics-table"> 
+                <tr> 
+                  <th class="product-characteristics_title">Связь</th>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Беспроводные интерфейсы</span></td>
+                  <td class="product-characteristics_params">Bluetooth; NFC; Wi-Fi; ИК-Порт; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Спутниковая навигация</span></td>
+                  <td class="product-characteristics_params">A-GPS; ГЛОНАСС; GPS</td>
+                </tr>
+                <tr> 
+                  <td class="product-characteristics_characteristic"><span>Количество SIM карт</span></td>
+                  <td class="product-characteristics_params">2</td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-description">
+              <h3 class="product-description_title">Описание</h3>
+              <p class="product-description_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur accusantium impedit amet possimus sequi dolorum! Consequatur, numquam quis, voluptas dolore repellendus vel enim doloribus dicta natus sit explicabo ipsam cum. Dignissimos, veniam? Repudiandae voluptate nam amet reprehenderit beatae cumque ex ipsum omnis asperiores vero, minus possimus eaque autem itaque perspiciatis natus sint architecto facere officia vel velit nesciunt similique impedit. Dolorum saepe pariatur nulla, vel sed eveniet tempora. Totam eius adipisci quae quisquam explicabo ad officiis aliquid illo beatae illum sapiente veniam assumenda est rerum recusandae, excepturi labore asperiores ex, iusto animi culpa molestiae iure. Facilis optio impedit provident nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod libero soluta architecto dolorum illo tenetur explicabo nemo provident ea, beatae, id ab quibusdam. Corrupti incidunt molestias totam nisi repellat quo ullam natus possimus reiciendis eligendi modi accusantium asperiores in, pariatur eveniet soluta quis mollitia odit iste distinctio, dolorum beatae nihil.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="similar">
+        <div class="similar-container container"> 
+          <h2 class="similar_title">Похожие товары</h2>
+          <ul class="similar-content"> 
+            <li class="similar-content_element similar-product">
+              <div class="similar-product_image__wrapper"> <img class="similar-product_image" src="./assets/images/product/1-3.jpg">
+                <div class="similar-product_discount">-38%</div>
+              </div>
+              <div class="similar-product_price"> <span class="similar-product_price--actual">23 000 ₽</span><span class="similar-product_price--discount">29 000 ₽</span></div>
+              <div class="similar-product_name">Xiaomi</div>
+            </li>
+            <li class="similar-content_element similar-product">
+              <div class="similar-product_image__wrapper"> <img class="similar-product_image" src="./assets/images/product/1-3.jpg">
+                <div class="similar-product_discount">-38%</div>
+              </div>
+              <div class="similar-product_price"> <span class="similar-product_price--actual">23 000 ₽</span><span class="similar-product_price--discount">29 000 ₽</span></div>
+              <div class="similar-product_name">Xiaomi</div>
+            </li>
+            <li class="similar-content_element similar-product">
+              <div class="similar-product_image__wrapper"> <img class="similar-product_image" src="./assets/images/product/1-3.jpg">
+                <div class="similar-product_discount">-38%</div>
+              </div>
+              <div class="similar-product_price"> <span class="similar-product_price--actual">23 000 ₽</span><span class="similar-product_price--discount">29 000 ₽</span></div>
+              <div class="similar-product_name">Xiaomi</div>
+            </li>
+            <li class="similar-content_element similar-product">
+              <div class="similar-product_image__wrapper"> <img class="similar-product_image" src="./assets/images/product/1-3.jpg">
+                <div class="similar-product_discount">-38%</div>
+              </div>
+              <div class="similar-product_price"> <span class="similar-product_price--actual">23 000 ₽</span><span class="similar-product_price--discount">29 000 ₽</span></div>
+              <div class="similar-product_name">Xiaomi</div>
+            </li>
+            <li class="similar-content_element similar-product">
+              <div class="similar-product_image__wrapper"> <img class="similar-product_image" src="./assets/images/product/1-3.jpg">
+                <div class="similar-product_discount">-38%</div>
+              </div>
+              <div class="similar-product_price"> <span class="similar-product_price--actual">23 000 ₽</span><span class="similar-product_price--discount">29 000 ₽</span></div>
+              <div class="similar-product_name">Xiaomi</div>
+            </li>
+            <li class="similar-content_element similar-product">
+              <div class="similar-product_image__wrapper"> <img class="similar-product_image" src="./assets/images/product/1-3.jpg">
+                <div class="similar-product_discount">-38%</div>
+              </div>
+              <div class="similar-product_price"> <span class="similar-product_price--actual">23 000 ₽</span><span class="similar-product_price--discount">29 000 ₽</span></div>
+              <div class="similar-product_name">Xiaomi</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-buyers">
+          <h3 class="footer_title">Покупателям</h3>
+          <ul class="footer-buyers-list"> 
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Как сделать заказ</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Способы оплаты</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Доставка</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Возврат товара</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Возврат денежных средств</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Правила продажи</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Правила пользования торговой площадкой</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Вопросы и ответы</a></li>
+          </ul>
+        </div>
+        <div class="footer-partners">
+          <h3 class="footer_title">Партнёрам</h3>
+          <ul class="footer-partners-list"> 
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Продавайте на Wildberries</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Перевозчикам</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Партнерский пункт выдачи</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Франшизный пункт выдачи</a></li>
+          </ul>
+        </div>
+        <div class="footer-partners">
+          <h3 class="footer_title">Компания</h3>
+          <ul class="footer-partners-list"> 
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">О нас</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Реквизиты</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Пресс-центр</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Контакты</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Bug Bounty</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">WB.Tech</a></li>
+          </ul>
+        </div>
+        <div class="footer-partners">
+          <h3 class="footer_title">Мы в соцсетях</h3>
+          <ul class="footer-partners-list"> 
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Вконтакте</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Одноклассники</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">YouTube</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Телеграм</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/scripts/index.min.js?_version=20220929001750"></script>
+  </body>
+</html>

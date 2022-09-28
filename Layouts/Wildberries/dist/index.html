@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная проекта</title>
-    <link rel="stylesheet" href="./assets/styles/index.min.css?_version=20220928010749">
+    <link rel="stylesheet" href="./assets/styles/index.min.css?_version=20220929001750">
   </head>
   <body> 
     <div class="maps"> <map name="link-home"> 
-        <area shape="default" href="#" alt="Wildberries"></map></div>
+        <area shape="default" href="index.html" alt="Wildberries"></map></div>
     <header class="header">
       <div class="header-container container">
         <nav class="header-nav"> 
           <ul class="header-nav-elements"> 
             <li class="header-nav_element">
-              <button class="header_burger"><span></span></button>
+              <button class="header_burger" id="sidebarOpen"><span></span></button>
               <div class="header_logo__wrapper"> <img class="header_logo" src="./assets/images/logo.svg" alt="Wildberries" usemap="#link-home"></div>
             </li>
             <li class="header-nav_element"> 
@@ -32,21 +32,94 @@
                 </ul>
               </form>
             </li>
-            <li class="header-nav_element"> <a class="header_button header_button__address link" href="#">Адреса</a><a class="header_button header_button__profile link" href="#">Войти</a><a class="header_button header_button__cart link" href="#">Корзина</a></li>
+            <li class="header-nav_element"> <a class="header_button header_button__address link" href="#">Адреса</a><a class="header_button header_button__profile link" href="#">Войти</a><a class="header_button header_button__cart link" href="product.html">Корзина</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <sidebar class="sidebar">
+    <sidebar class="sidebar" id="sidebar">
       <div class="sidebar-container"> 
-        <div class="categories"> </div>
-        <div class="subcatogories"> </div>
-        <div class="subsubcategories"></div>
+        <button class="sidebar_close" id="sidebarClose"></button>
+        <div class="categories"> 
+          <ul class="categories-list">
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Женщинам">Женщинам</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Обувь">Обувь</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Детям">Детям</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Мужчинам">Мужчинам</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Дом">Дом</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Красота">Красота</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Аксессуары">Аксессуары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Электроника">Электроника</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Игрушки">Игрушки</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Мебель">Мебель</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Товары для взрослых">Товары для взрослых</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Бытовая химия">Бытовая химия</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Зоотовары">Зоотовары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Спорт">Спорт</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Школа">Школа</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Автотовары">Автотовары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Книги">Книги</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Ювелирные изделия">Ювелирные изделия</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Для ремонта">Для ремонта</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Алкоголь">Алкоголь</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Сад и дача">Сад и дача</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Здоровье">Здоровье</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Концтовары">Концтовары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Цифровые товары">Цифровые товары</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Акции">Акции</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Авиабилеты">Авиабилеты</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Бренды">Бренды</a></li>
+            <li class="categories-list_element"><a class="categories-list_link link" href="#" data-categories-name="Видеообзоры">Видеообзоры</a></li>
+          </ul>
+        </div>
       </div>
     </sidebar>
     <footer class="footer">
-      <div class="footer-container container"></div>
+      <div class="footer-container container">
+        <div class="footer-buyers">
+          <h3 class="footer_title">Покупателям</h3>
+          <ul class="footer-buyers-list"> 
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Как сделать заказ</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Способы оплаты</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Доставка</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Возврат товара</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Возврат денежных средств</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Правила продажи</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Правила пользования торговой площадкой</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Вопросы и ответы</a></li>
+          </ul>
+        </div>
+        <div class="footer-partners">
+          <h3 class="footer_title">Партнёрам</h3>
+          <ul class="footer-partners-list"> 
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Продавайте на Wildberries</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Перевозчикам</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Партнерский пункт выдачи</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Франшизный пункт выдачи</a></li>
+          </ul>
+        </div>
+        <div class="footer-partners">
+          <h3 class="footer_title">Компания</h3>
+          <ul class="footer-partners-list"> 
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">О нас</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Реквизиты</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Пресс-центр</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Контакты</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Bug Bounty</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">WB.Tech</a></li>
+          </ul>
+        </div>
+        <div class="footer-partners">
+          <h3 class="footer_title">Мы в соцсетях</h3>
+          <ul class="footer-partners-list"> 
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Вконтакте</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Одноклассники</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">YouTube</a></li>
+            <li class="footer-buyers-list_element"><a class="footer_link link" href="#">Телеграм</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
-    <script src="./assets/scripts/index.min.js?_version=20220928010749"></script>
+    <script src="./assets/scripts/index.min.js?_version=20220929001750"></script>
   </body>
 </html>

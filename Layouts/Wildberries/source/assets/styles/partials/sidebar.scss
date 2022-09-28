@@ -1,24 +1,76 @@
 .sidebar {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0; left: 0;
     height: 100vh; width: 100vw;
-    background-color: rgba($DARK, .2);
+    background-color: rgba($DARK, .3);
+    z-index: 100;
+    &.active {
+        display: block;
+    }
+    &_close {
+        position: absolute;
+        top: 2%; right: -20%;
+        display: block;
+        width: 4rem; height: 4rem;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: all .2s ease-in;
+        transform-origin: 50%;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: calc(50% - .25rem); left: 0;
+            display: block;
+            width: 100%; height: .5rem;
+            border-radius: .5rem;
+            background-color: $WHITE;
+            transform-origin: 50%;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+        &:hover {
+            cursor: pointer;
+            transform: rotate(90deg);
+        }
+    }
     &-container {
+        position: relative;
+        height: 100%;
+        width: fit-content;
         display: flex;
     }
-    .categories,
-    .subcatogories,
-    .subsubcategories {
-        width: 30rem; height: 100vh;
-    }
     .categories {
-        background-color: $GREEN;
-    }
-    .subcatogories {
-        background-color: $PURPLE;
-    }
-    .subsubcategories {
-        background-color: $PINK;
+        height: 100%;
+        background-color: $WHITE;
+        &-list {
+            padding: 2rem 3rem;
+            height: 100%;
+            overflow: scroll;
+            &_element {
+                width: 100%;
+                &:not(:first-child) {
+                    margin-top: 1rem;
+                }
+            }
+            &_link {
+                padding: .3em 1em;
+                padding-left: 3em;
+                display: block;
+                width: 100%;
+                font-size: 1.6rem;
+                border-radius: 1rem;
+                &:hover {
+                    background-color: $PRIMARY;
+                    text-decoration: none;
+                    color: $WHITE;
+                }
+            }
+        }
     }
 }

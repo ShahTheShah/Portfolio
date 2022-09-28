@@ -1,0 +1,187 @@
+.product {
+    &-main {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        &-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+        }
+    }
+
+    &-view {
+        height: 65rem;
+    }
+
+    &-aside {
+        &-top {
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: 9fr 1fr;
+            gap: 3rem;
+            margin: 0 auto;
+            width: 70%;
+            box-shadow: 0rem 0rem 2rem rgba($DARK, .1);
+            border-radius: 1rem;
+            height: fit-content;
+        }
+        &-bottom {
+            
+        }
+        // border: 2px solid rgba($PRIMARY_DARK, .4);
+    }
+
+    &_price {
+        display: flex;
+        align-items: flex-end;
+
+        &--actual {
+            margin-right: 2rem;
+            font-size: 3.5rem;
+            line-height: 3rem;
+            font-weight: 600;
+        }
+
+        &--discount {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2rem;
+            text-decoration: line-through;
+            color: rgba($TEXT_COLOR, .7);
+        }
+    }
+
+    &_button {
+        &--favorite {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            mask-image: url("@images/heart.svg");
+            background-color: rgba($TEXT_COLOR, .2);
+
+            &:hover {
+                cursor: pointer;
+                background-color: $PRIMARY;
+            }
+        }
+
+        &--addToCart {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding: .5em;
+            border-radius: 1rem;
+            background-color: $PRIMARY;
+            color: $WHITE;
+
+            &:hover {
+                cursor: pointer;
+                background-color: lighten($PRIMARY, 5%);
+            }
+        }
+    }
+
+    &_delivery {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        color: rgba($TEXT_COLOR, .7);
+
+        &--day {
+            color: $TEXT_COLOR;
+        }
+    }
+}
+
+.glide {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    gap: 1rem;
+
+    // border: 1px solid $PURPLE;
+    &-track {
+        padding: 1rem;
+        display: grid;
+        width: 100%;
+        height: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1rem;
+        overflow: hidden;
+
+        // border: 1px solid $RED;
+        &_image {
+            &__wrapper {
+                width: 100%;
+                height: 100%;
+                border: 2px solid rgba($PRIMARY_DARK, .4);
+                border-radius: .4rem;
+                overflow: hidden;
+                z-index: 1;
+
+                &:hover {
+                    border-color: $PRIMARY;
+                }
+            }
+
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: -1;
+        }
+    }
+
+    &-main {
+        width: 100%;
+        height: 100%;
+        border: 2px solid rgba($PRIMARY_DARK, .4);
+        border-radius: .8rem;
+        overflow: hidden;
+
+        &_image {
+            &__wrapper {
+                padding: 2rem;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-controls {
+        position: absolute;
+        left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 14%;
+        height: 100%;
+
+        &--prev {
+            mask-image: url("@images/arrow-up.svg");
+        }
+
+        &--next {
+            mask-image: url("@images/arrow-down.svg");
+        }
+    }
+
+    &_control {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        mask-size: contain;
+        background-color: rgba($TEXT_COLOR, .7);
+
+        &:hover {
+            cursor: pointer;
+            background-color: $PRIMARY;
+        }
+    }
+}

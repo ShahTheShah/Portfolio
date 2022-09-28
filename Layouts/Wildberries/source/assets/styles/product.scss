@@ -9,7 +9,22 @@
 
 @import 'partials/header';
 @import 'partials/sidebar';
+.product {
+    position: relative;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    z-index: 10;
+}
+@import 'partials/product/productHeader';
+@import 'partials/product/productMain';
+@import 'partials/product/productAbout';
+@import 'partials/similar';
 @import 'partials/footer';
+
 
 // -----------------------------
 

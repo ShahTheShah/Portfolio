@@ -1,5 +1,23 @@
-sidebar.sidebar
+-
+    const
+        categories = [
+            'Женщинам', 'Обувь', 'Детям', 'Мужчинам', 
+            'Дом', 'Красота', 'Аксессуары', 'Электроника', 
+            'Игрушки', 'Мебель', 'Товары для взрослых', 
+            'Бытовая химия', 'Зоотовары', 'Спорт', 'Школа',
+            'Автотовары', 'Книги', 'Ювелирные изделия',
+            'Для ремонта', 'Алкоголь', 'Сад и дача', 'Здоровье',
+            'Концтовары', 'Цифровые товары', 'Акции', 'Авиабилеты',
+            'Бренды', 'Видеообзоры'
+        ]
+
+sidebar.sidebar#sidebar
     .sidebar-container  
+        button.sidebar_close#sidebarClose
         .categories 
-        .subcatogories 
-        .subsubcategories
+            ul.categories-list
+                each name in categories
+                    li.categories-list_element
+                        a.categories-list_link.link(href="#", data-categories-name=`${name}`)= name
+           
+

@@ -1,0 +1,49 @@
+.similar {
+    &-content {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+        &_element {
+        }
+    }
+    &-product {
+        padding-bottom: 1rem;
+        border: 2px solid rgba($PRIMARY_DARK, .1);
+        border-radius: 1rem;
+        overflow: hidden;
+        &_image {
+            &__wrapper {
+                position: relative;
+                width: 100%; height: auto;
+            }
+            width: 100%; height: auto;
+            object-fit: cover;
+        }
+        &_discount {
+            position: absolute;
+            bottom: 8%; left: 8%;
+            padding: .2em .6em;
+            background-color: lighten($PRIMARY, 50%);
+            border-radius: 1rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $PRIMARY;
+        }
+        &_price {
+            padding: 0 1rem;
+            font-weight: 600;
+            &--discount {
+                margin-left: 1rem;
+                font-size: 1.5rem;
+                text-decoration: line-through;
+                color: rgba($TEXT_COLOR, .7)
+            }
+        }
+        &_name {
+            padding: 0 1rem;
+            font-size: 1.8rem;
+            color: rgba($TEXT_COLOR, .7)
+        }
+    }
+}

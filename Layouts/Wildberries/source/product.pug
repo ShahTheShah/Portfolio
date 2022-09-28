@@ -1,0 +1,19 @@
+-
+    const
+        title    = 'Страница товара',
+        nameFile = 'product';
+
+doctype html
+html(lang="ru")
+    include partials/head
+    body 
+        include partials/maps
+        include partials/header
+        include partials/sidebar
+        main.product
+            include partials/product/productHeader
+            include partials/product/productMain
+            include partials/product/productAbout
+            include partials/similar
+        include partials/footer
+        script(src=`@scripts/index.min.js`)

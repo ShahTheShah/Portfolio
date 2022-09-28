@@ -6,30 +6,30 @@
 
 @include mediaQuery($breakpoint-sm, $breakpoint-md) {
     .container {
-        max-width: 566px;
+        max-width: 540px;
     }
 }
 
 @include mediaQuery($breakpoint-md, $breakpoint-lg) {
     .container {
-        max-width: 758px;
+        max-width: 720px;
     }
 }
 
 @include mediaQuery($breakpoint-lg, $breakpoint-xl) {
     .container {
-        max-width: 982px;
+        max-width: 960px;
     }
 }
 
 @include mediaQuery($breakpoint-xl, $breakpoint-xxl) {
     .container {
-        max-width: 1190px;
+        max-width: 1140px;
     }
 }
 
 @include mediaQuery($breakpoint-xxl, none) {
     .container {
-        max-width: 1390px;
+        max-width: 1320px;
     }
 }

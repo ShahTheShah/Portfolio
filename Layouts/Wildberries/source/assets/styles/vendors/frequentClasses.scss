@@ -5,4 +5,8 @@
 .link {
     text-decoration: none;
     color: $TEXT_COLOR;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }

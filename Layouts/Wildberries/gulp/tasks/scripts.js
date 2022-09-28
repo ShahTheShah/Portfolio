@@ -10,7 +10,7 @@ export default () => app.gulp.src(app.path.source.scripts, { sourcemaps: app.isD
     .pipe(app.plugins.webpack({
         mode: app.isBuild ? 'production' : 'development',
         output: {
-            filename: 'index.min.js'
+            filename: 'index.min.js',
         }
     }))
     .pipe(app.gulp.dest(app.path.build.scripts, { sourcemaps: app.isDev }))
