@@ -10,6 +10,22 @@
 
 const functions = {
     hello: name => `Hello, ${name}!`,
+    sidebarOpenClose: () => {
+        const
+            openButton = document.getElementById('sidebarOpen'),
+            closeButton = document.getElementById('sidebarClose'),
+            sidebar = document.getElementById('sidebar'),
+            body = document.body;
+        openButton.addEventListener('click', _e => {
+            sidebar.classList.toggle('active');
+            body.classList.toggle('sidebarActive');
+        });
+        closeButton.addEventListener('click', _e => {
+            sidebar.querySelectorAll('.active').forEach(elem => elem.classList.remove('active'))
+            sidebar.classList.toggle('active');
+            body.classList.toggle('sidebarActive');
+        });
+    }
 };
 
 export default functions;

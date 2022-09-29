@@ -541,7 +541,7 @@ body.sidebarActive {
 .sidebar_close {
   position: absolute;
   top: 2%;
-  right: -20%;
+  right: -5rem;
   display: block;
   width: 4rem;
   height: 4rem;
@@ -601,35 +601,68 @@ body.sidebarActive {
   display: flex;
 }
 
-.sidebar .categories {
+.categories:nth-child(3) {
+  display: none;
+}
+
+.categories:nth-child(3) .categories-content {
+  border-left: 2px solid rgba(74, 17, 116, 0.2);
+  display: none;
+}
+
+.categories:nth-child(4) {
+  display: none;
+}
+
+.categories:nth-child(4) .categories-content {
+  border-left: 2px solid rgba(74, 17, 116, 0.2);
+  display: none;
+}
+
+.categories.active {
+  display: block;
+}
+
+.categories-content {
+  padding: 2rem 3rem;
+  padding-right: 0;
   height: 100%;
   background-color: #FFFFFF;
 }
 
-.sidebar .categories-list {
-  padding: 2rem 3rem;
+.categories-content.active {
+  display: block !important;
+}
+
+.categories_title {
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+
+.categories-list {
+  padding: 2rem;
   height: 100%;
   overflow: scroll;
 }
 
-.sidebar .categories-list_element {
+.categories-list_element {
   width: 100%;
+  overflow: hidden;
 }
 
-.sidebar .categories-list_element:not(:first-child) {
+.categories-list_element:not(:first-child) {
   margin-top: 1rem;
 }
 
-.sidebar .categories-list_link {
+.categories-list_link {
   padding: 0.3em 1em;
-  padding-left: 3em;
   display: block;
   width: 100%;
   font-size: 1.6rem;
   border-radius: 1rem;
 }
 
-.sidebar .categories-list_link:hover {
+.categories-list_link.active {
   background-color: #CA11AB;
   text-decoration: none;
   color: #FFFFFF;
