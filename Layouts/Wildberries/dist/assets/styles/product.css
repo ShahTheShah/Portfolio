@@ -890,30 +890,44 @@ body.sidebarActive {
   display: grid;
   -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
-  gap: 4rem;
+  gap: 0 4rem;
 }
 
 .product-view {
+  height: 65rem;
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
   grid-column: 1/span 7;
-  height: 65rem;
 }
 
 .product-aside {
+  position: relative;
   -ms-grid-column: 8;
   -ms-grid-column-span: 5;
   grid-column: 8/span 5;
-  margin: 0 auto;
+  background-color: transparent;
+  height: 65rem;
+}
+
+.product-aside-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[8];
   grid-template-rows: repeat(8, 1fr);
   gap: 2rem;
-  background-color: transparent;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 55rem;
+}
+
+.product-aside-container.fixed {
+  position: fixed;
+  top: 2rem;
+  right: 0;
+}
+
+.product-aside-container.absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .product-aside-top,
