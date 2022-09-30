@@ -5,34 +5,44 @@
 
         &-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 5rem;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 4rem;
         }
     }
 
     &-view {
+        grid-column: 1 / span 7;
         height: 65rem;
     }
 
     &-aside {
-        &-top {
-            padding: 3rem;
-            display: grid;
-            grid-template-columns: 9fr 1fr;
-            gap: 3rem;
-            margin: 0 auto;
-            width: 70%;
+        grid-column: 8 / span 5;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+        gap: 2rem;
+        background-color:transparent;
+        height: fit-content;
+        &-top,
+        &-bottom {
+            background-color: $WHITE;
             box-shadow: 0rem 0rem 2rem rgba($DARK, .1);
+            padding: 3rem;
             border-radius: 1rem;
-            height: fit-content;
+        }
+        &-top {
+            grid-row: 1 / span 4;
         }
         &-bottom {
-            
+            grid-row: 5 / span 4;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 3rem;
         }
-        // border: 2px solid rgba($PRIMARY_DARK, .4);
     }
 
     &_price {
+        grid-column: 1 / span 11;
         display: flex;
         align-items: flex-end;
 
@@ -54,6 +64,7 @@
 
     &_button {
         &--favorite {
+            grid-column: 12 / span 1;
             display: block;
             width: 3rem;
             height: 3rem;
@@ -67,8 +78,8 @@
         }
 
         &--addToCart {
-            grid-column-start: 1;
-            grid-column-end: 3;
+            grid-row: 2;
+            grid-column: 1 / span 12;
             padding: .5em;
             border-radius: 1rem;
             background-color: $PRIMARY;
@@ -82,8 +93,8 @@
     }
 
     &_delivery {
-        grid-column-start: 1;
-        grid-column-end: 3;
+        grid-row: 3;
+        grid-column: 1 / span 12;
         color: rgba($TEXT_COLOR, .7);
 
         &--day {

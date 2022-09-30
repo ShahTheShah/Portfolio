@@ -65,6 +65,12 @@ const
                 }
             }
         });
+    },
+    fixedScrollProductAside = () => {
+        const
+            aside = document.getElementById('product-aside'),
+            offsetRight = aside.offsetRight
     };
 sidebar();
+fixedScrollProductAside();
 productsRating ? ratingALLProducts() : null;
