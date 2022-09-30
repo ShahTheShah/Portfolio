@@ -6,16 +6,16 @@ import functions from './modules/functions.js';
 
 
 const
-    // productsRating = document.querySelectorAll('.estimation-stars'),
-    // ratingALLProducts = () => {
-    //     productsRating.forEach(productRating => {
-    //         const stars = productRating.classList[2].split('-')[1] > 5 ? 5 : productRating.classList[2].split('-')[1];
-    //         const spans = productRating.querySelectorAll('span');
-    //         for (let i = 0; i < stars; i++) {
-    //             spans[i].classList.add('active')
-    //         }
-    //     });
-    // },
+    productsRating = document.querySelectorAll('.estimation-stars'),
+    ratingALLProducts = () => {
+        productsRating.forEach(productRating => {
+            const stars = productRating.classList[2].split('-')[1] > 5 ? 5 : productRating.classList[2].split('-')[1];
+            const spans = productRating.querySelectorAll('span');
+            for (let i = 0; i < stars; i++) {
+                spans[i].classList.add('active')
+            }
+        });
+    },
     sidebar = () => {
         functions.sidebarOpenClose();
         let nameLinkLavelOneActive, nameContentLavelTwoActive;
@@ -67,4 +67,4 @@ const
         });
     };
 sidebar();
-// productsRating ? ratingALLProducts() : null;
+productsRating ? ratingALLProducts() : null;
