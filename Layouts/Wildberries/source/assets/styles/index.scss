@@ -10,16 +10,19 @@
 @import 'partials/header';
 @import 'partials/sidebar';
 main.main {
-    height: 100vh;
     position: relative;
         margin-top: -2rem;
         margin-bottom: -2rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
         padding-bottom: 10rem;
         background-color: #fff;
         border-radius: 2rem;
         z-index: 10;
 }
+@import 'partials/bigBanner';
+@import 'partials/promotions';
+@import 'partials/similar';
+@import 'partials/miniBanners';
 @import 'partials/footer';
 
 // -----------------------------

@@ -1,11 +1,12 @@
 .similar {
+    &-container {
+        padding-top: 4rem;
+    }
     &-content {
         margin-top: 2rem;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 1rem;
-        &_element {
-        }
     }
     &-product {
         padding-bottom: 1rem;
