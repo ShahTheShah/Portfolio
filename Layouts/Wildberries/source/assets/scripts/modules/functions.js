@@ -17,12 +17,12 @@ const functions = {
             sidebar = document.getElementById('sidebar'),
             body = document.body;
         openButton.addEventListener('click', _e => {
-            sidebar.classList.toggle('active');
+            sidebar.classList.toggle('sidebar--active');
             body.classList.toggle('sidebarActive');
         });
         closeButton.addEventListener('click', _e => {
             sidebar.querySelectorAll('.active').forEach(elem => elem.classList.remove('active'))
-            sidebar.classList.toggle('active');
+            sidebar.classList.toggle('sidebar--active');
             body.classList.toggle('sidebarActive');
         });
     }

@@ -31,6 +31,44 @@
             }
         }
     }
+        .sidebar {
+            &-container {
+                width: 100%;
+            }
+    
+            &-categories {
+                position: relative;
+                
+                &_button {
+                    display: block;
+                }
+    
+                &_element {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                }
+    
+                &--lavelOne {
+                    z-index: 1001;
+                }
+    
+                &--lavelTwo {
+                    display: none;
+                    z-index: 1002;
+                }
+    
+                &--lavelThree {
+                    display: none;
+                    z-index: 1003;
+                }
+    
+                &-list {
+                    width: 100%;
+                }
+            }
+        }
     .footer {
         &-container {
             grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
@@ -63,6 +101,44 @@
             }
         }
     }
+        .sidebar {
+            &-container {
+                width: 100%;
+            }
+    
+            &-categories {
+                position: relative;
+    
+                &_button {
+                    display: block;
+                }
+    
+                &_element {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                }
+    
+                &--lavelOne {
+                    z-index: 1001;
+                }
+    
+                &--lavelTwo {
+                    display: none;
+                    z-index: 1002;
+                }
+    
+                &--lavelThree {
+                    display: none;
+                    z-index: 1003;
+                }
+    
+                &-list {
+                    width: 100%;
+                }
+            }
+        }
     .footer {
         &-container {
             grid-template-columns: repeat(2, 1fr);
@@ -89,6 +165,38 @@
                 &:nth-child(3) {
                     grid-column: span 6;
                 }
+            }
+        }
+    }
+    .sidebar {
+        &-container {
+            width: 100%;
+        }
+        &-categories {
+            position: relative;
+            &_button {
+                display: block;
+            }
+            &_element {
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%;
+            }
+            &--lavelOne {
+                z-index: 1001;
+            }
+            
+            &--lavelTwo {
+                display: none;
+                z-index: 1002;
+            }
+            
+            &--lavelThree {
+                display: none;
+                z-index: 1003;
+            }
+            &-list {
+                width: 100%;
             }
         }
     }
